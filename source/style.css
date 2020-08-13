@@ -35,7 +35,7 @@ h1 {
   filter: invert(1) sepia(1) saturate(200) hue-rotate(400deg);
   animation-name: rainbow;
   animation-iteration-count: infinite;
-  animation-duration: 4s;
+  animation-duration: 8s;
 }
 
 @keyframes rainbow {
