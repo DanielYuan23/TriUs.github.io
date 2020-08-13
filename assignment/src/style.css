@@ -1,0 +1,230 @@
+/* Add any CSS you need to this file. */
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: 'Chilanka', cursive;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  display: inline-block;
+  cursor: pointer;
+}
+h1 {
+  font-size: 64px;
+}
+.mainbody {
+  background: #000;
+  color: rgb(163, 19, 19);
+}
+
+.logo > span {
+  display: inline-block;
+  width: 64px;
+  height: 64px;
+  background-color: #000;
+  background-image: url('images/75660.png');
+  background-size: cover;
+  background-position: center;
+  filter: invert(1) sepia(1) saturate(200) hue-rotate(400deg);
+  animation-name: rainbow;
+  animation-iteration-count: infinite;
+  animation-duration: 4s;
+}
+
+@keyframes rainbow {
+  from {
+    filter: invert(1) sepia(1) saturate(200) hue-rotate(0deg);
+  }
+  to {
+    filter: invert(1) sepia(1) saturate(200) hue-rotate(360deg);
+  }
+}
+
+img {
+  width: 100%;
+  display: block;
+  margin: 0 auto;
+}
+
+.bar > ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  padding: 0 24px;
+}
+
+.bar > ul > li {
+  flex: 1;
+  position: relative;
+}
+
+.bar > ul > li > a {
+  width: 100%;
+  text-align: center;
+}
+
+.bar ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.mainbody a {
+  color: white;
+}
+
+.bar > ul > li > ul {
+  position: absolute;
+  display: none;
+  width: 100%;
+}
+
+.bar > ul > li:hover > ul {
+  position: absolute;
+  display: block;
+}
+
+.bar > ul > li > ul a {
+  display: block;
+}
+
+.small {
+  width: 30%;
+}
+
+.seventy {
+  width: 75%;
+}
+
+.sixty {
+  width: 75%;
+}
+
+.sbs {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.sbs > * {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  margin: 0 1%;
+}
+
+h1 {
+  font-family: 'Arial', sans-serif;
+  font-weight: 900;
+}
+
+.productImage {
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 200px;
+}
+
+.bar {
+  background-color: rgb(233, 35, 35);
+}
+
+.bar a {
+  padding: 16px 24px;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.8);
+}
+
+.topbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.topbar h1 {
+  margin: 0;
+}
+
+.navmenu a {
+  background-color: rgb(82, 6, 6);
+}
+
+footer {
+  border-top: 2px solid rgba(255, 255, 255, 0.8);
+  background-color: rgb(82, 6, 6);
+  padding: 24px;
+  bottom: 0;
+}
+
+.banner {
+  color: black;
+}
+
+.logos ul {
+  display: flex;
+  flex-direction: row;
+  margin: 0px;
+  padding: 0px;
+}
+
+.logos ul li {
+  height: 50px;
+  width: 50px;
+  list-style-type: none;
+}
+
+#orderNum {
+  display: none;
+}
+
+label {
+  font-weight: 900;
+  font-size: 20px;
+}
+
+.register {
+  border: 8px solid rgb(233, 35, 35);
+  padding: 8px;
+  width: 400px;
+  margin: 2em auto;
+}
+
+input,
+textarea {
+  width: 100%;
+  margin-bottom: 1em;
+}
+
+input[type='radio'] {
+  width: auto;
+}
+
+textarea {
+  height: 12em;
+}
+
+.subscribe {
+  text-align: right;
+}
+
+.sub {
+  width: 250px;
+}
+
+.search {
+  width: 250px;
+  bottom: 0;
+}
+.logo {
+  display: flex;
+  align-items: center;
+}
+footer {
+  color: white;
+}

@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <title>contacts</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="contact.js"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Chilanka&display=swap" rel="stylesheet" />
+</head>
+
+<body class="mainbody">
+  <nav class="bar">
+    <div class="topbar">
+      <div class="logo">
+        <span></span>
+        <span></span>
+        <span></span>
+        <h1 class="banner">
+          Tri Us
+        </h1>
+      </div>
+
+
+      <div class="search">
+        <input type="text" placeholder="search..." />
+      </div>
+    </div>
+    <ul class="navmenu">
+      <li>
+        <a href="index.html">home</a>
+      </li>
+      <li>
+        <a>Products</a>
+        <ul>
+          <li><a href="/womens.html">Women's Tricycles</a></li>
+          <li><a href="/mens.html">Men's Tricycles</a></li>
+          <li><a href="/childrens.html">Children's Tricycles</a></li>
+        </ul>
+      </li>
+      <li><a href="/about.html">About Us</a></li>
+      <li><a href="/contacts.html">Contacts</a></li>
+
+    </ul>
+  </nav>
+
+  <h1>Contacts:</h1>
+  <h2>Address:</h2>
+  <p>87 Roxbury dr</p>
+  <h2>Email:</h2>
+  <p>xkyuan1@myseneca.ca</p>
+  <h2>Phone:</h2>
+  <p>613-355-8202</p>
+  <h2>For additional information please fill out the form below</h2>
+  <form class="register" action="https://httpbin.org/post" method="POST">
+    <label for="fname">First name:</label><br />
+    <input required type="text" name="fname" /><br />
+    <label for="lname">Last name:</label><br />
+    <input required type="text" name="lname" /><br />
+    <label for="email">Email: </label><br />
+    <input required type="email" name="email" /><br />
+    <label for="address">Address:</label><br />
+    <input required type="text" name="address" /><br />
+    <label for="city">City:</label><br />
+    <input required list="cities" name="city" />
+    <datalist id="cities">
+      <option value="Toronto">
+      <option value="Montreal">
+      <option value="Calgary">
+      <option value="Ottawa">
+      <option value="Edmonton">
+      <option value="Mississauga">
+      <option value="Winnipeg">
+      <option value="Vancouver">
+      <option value="Brampton">
+      <option value="Hamilton">
+      <option value="Quebec City">
+      <option value="Surrey">
+      <option value="Laval">
+      <option value="Halifax">
+      <option value="London">
+      <option value="Markham">
+      <option value="Vaughan">
+      <option value="Gatineau">
+      <option value="Saskatoon">
+      <option value="Longueuil">
+      <option value="Kitchener">
+      <option value="Burnaby">
+      <option value="Windsor">
+      <option value="Regina">
+      <option value="Richmond">
+      <option value="Richmond Hill">
+      <option value="Oakville">
+      <option value="Burlington">
+      <option value="Greater Sudbury">
+      <option value="Sherbrooke">
+      <option value="Oshawa">
+      <option value="Saguenay">
+      <option value="Lévis">
+      <option value="Barrie">
+      <option value="Abbotsford">
+      <option value="Coquitlam">
+      <option value="Trois-Rivières">
+      <option value="St. Catharines">
+      <option value="Guelph">
+      <option value="Cambridge">
+      <option value="Whitby">
+      <option value="Kelowna">
+      <option value="Kingston">
+      <option value="Ajax">
+      <option value="Langley">
+      <option value="Saanich">
+      <option value="Terrebonne">
+      <option value="Milton">
+      <option value="St. John's">
+      <option value="Thunder Bay">
+      <option value="Waterloo">
+      <option value="Delta">
+      <option value="Chatham-Kent">
+      <option value="Red Deer">
+      <option value="Strathcona County">
+      <option value="Brantford">
+      <option value="Saint-Jean-sur-Richelieu">
+      <option value="Cape Breton">
+      <option value="Lethbridge">
+      <option value="Clarington">
+      <option value="Pickering">
+      <option value="Nanaimo">
+      <option value="Kamloops">
+      <option value="Niagara Falls">
+      <option value="North Vancouver">
+      <option value="Victoria">
+      <option value="Brossard">
+      <option value="Repentigny">
+      <option value="Newmarket">
+      <option value="Chilliwack">
+      <option value="Maple Ridge">
+      <option value="Peterborough">
+      <option value="Kawartha Lakes">
+      <option value="Drummondville">
+      <option value="Saint-Jérôme">
+      <option value="Prince George">
+      <option value="Sault Ste. Marie">
+      <option value="Moncton">
+      <option value="Sarnia">
+      <option value="Wood Buffalo">
+      <option value="New Westminster">
+      <option value="Saint John">
+      <option value="Caledon">
+      <option value="Granby">
+      <option value="St. Albert">
+      <option value="Norfolk County">
+      <option value="Medicine Hat">
+      <option value="Grande Prairie">
+      <option value="Airdrie">
+      <option value="Halton Hills">
+      <option value="Port Coquitlam">
+      <option value="Fredericton">
+      <option value="Blainville">
+      <option value="Saint-Hyacinthe">
+      <option value="Aurora">
+      <option value="North Vancouver">
+      <option value="Welland">
+      <option value="North Bay">
+      <option value="Belleville">
+      <option value="Mirabel">
+    </datalist><br />
+
+    <label for="postalcode">Postal Code:</label><br />
+    <input required type="text" name="postalcode" pattern="[A-Za-z][0-9][A-Za-z] ?[0-9][A-Za-z][0-9]"
+      title="enter a 6 digit canadian postal code" /><br />
+
+    <label for="inquiry">Select one of the following options</label><br>
+
+    <input type="radio" name="inquiry" value="question" />
+    <label for="question">Question</label><br />
+
+    <input type="radio" name="inquiry" value="comment" />
+    <label for="comment">Comment</label><br />
+
+    <input type="radio" name="inquiry" value="orderproblem" />
+    <label for="orderproblem">Order Problem</label><br />
+
+    <div id="orderNum">
+      <label for="ordernumber">Order Number</label><br />
+      <input type="text" name="ordernumber" />
+    </div>
+
+    <textarea required name="message"></textarea>
+
+    <input type="hidden" name="myname" value="Daniel" /><br />
+
+    <input type="submit">
+  </form>
+
+  <footer>
+    <p>Copyright ©️ 2020 Tri Us LTD. All rights reserved.</p>
+    <nav>
+      <a href="#">Privacy Policy</a>
+      <a href="#">Terms of Use</a>
+      <a href="#">Legal</a>
+    </nav>
+    <div>
+      <h3>FOLLOW US</h3>
+    </div>
+    <div class="logos">
+      <ul>
+        <li>
+          <a href="#"><img src="\images\pinpng.com-facebook-logo-png-white-672646.png" /></a>
+        </li>
+        <li></li>
+        <li>
+          <a href="#"><img src="\images\pinpng.com-instagram-logo-png-transparent-571558.png" /></a>
+        </li>
+        <li></li>
+        <li>
+          <a href="#"><img src="\images\pinpng.com-twitter-png-logo-530663.png" /></a>
+        </li>
+      </ul>
+    </div>
+  </footer>
+</body>
+
+</html>
